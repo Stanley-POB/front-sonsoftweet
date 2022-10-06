@@ -7,11 +7,13 @@ import Signup from "./Signup";
 import "antd/dist/antd.css";
 import { Button, Modal } from "antd";
 import { useState } from "react";
+import Link from "next/link";
 
 function Login() {
   const [isModalOpenSignIn, setIsModalSignInOpen] = useState(false);
   const [isModalOpenSignUp, setIsModalSignUpOpen] = useState(false);
 
+  /*   Fonctions du Modal */
   const showModalSignIn = () => {
     setIsModalSignInOpen(true);
   };
@@ -35,6 +37,8 @@ function Login() {
     setIsModalSignInOpen(false);
   };
 
+  /* ******************************************************* */
+
   return (
     <>
       <div className={styles.maindiv}>
@@ -43,30 +47,35 @@ function Login() {
         </div>
         <div className={styles.rightdiv}>
           <img src="logo.png" className={styles.logorightdiv} />
-          <div>
+          <div className={styles.rightdivcontent}>
             <h1 className={styles.maintitle}>See what's happening</h1>
             <h2>Join Sons of Tweet today!</h2>
-            <button className={styles.signupbutton} onClick={showModalSignUp}>
-              SIGN UP
-            </button>
-            <Modal
-              open={isModalOpenSignUp}
-              onOk={handleOkSignUp}
-              onCancel={handleCancelSignUp}
-            >
-              <Signup />
-            </Modal>
-            <p>Already have an account?</p>
-            <button className={styles.signinbutton} onClick={showModalSignIn}>
-              SIGN IN
-            </button>
-            <Modal
-              open={isModalOpenSignIn}
-              onOk={handleOkSignIn}
-              onCancel={handleCancelSignIn}
-            >
-              <Signin />
-            </Modal>
+            <Link href="/home">
+              <span className={styles.homepage}>HOMEPAGE</span>
+            </Link>
+            <div className={styles.rightdivbutton}>
+              <button className={styles.signupbutton} onClick={showModalSignUp}>
+                SIGN UP
+              </button>
+              <Modal
+                open={isModalOpenSignUp}
+                onOk={handleOkSignUp}
+                onCancel={handleCancelSignUp}
+              >
+                <Signup />
+              </Modal>
+              <p>Already have an account?</p>
+              <button className={styles.signinbutton} onClick={showModalSignIn}>
+                SIGN IN
+              </button>
+              <Modal
+                open={isModalOpenSignIn}
+                onOk={handleOkSignIn}
+                onCancel={handleCancelSignIn}
+              >
+                <Signin />
+              </Modal>
+            </div>
           </div>
         </div>
       </div>

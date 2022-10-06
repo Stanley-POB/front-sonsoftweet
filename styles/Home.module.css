@@ -1,7 +1,60 @@
+/* MAIN DIV */
 .maindiv{
-    background-color: grey;
+    background-color: #14171A;
+    margin:0;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(50, 1fr);
+    grid-template-rows: repeat(50, 1fr);
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
 }
 
-.title{
-    font-size: 50px;
+/* LEFT DIV */
+.leftdiv{
+    grid-column-start: 1;
+    grid-column-end: 14;
+    grid-row-start: 1;
+    grid-row-end: 51;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.logoleftdiv{
+    width: 6vw;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.userimage{
+    width: 4vw;
+    border-radius: 40px;
+}
+
+/* MIDDLE DIV */
+.middlediv{
+    border-right: 1px solid #AAB8C2;
+    border-left: 1px solid #AAB8C2;
+    grid-column-start: 14;
+    grid-column-end: 38;
+    grid-row-start: 1;
+    grid-row-end: 51;
+
+}
+
+/* RIGHT DIV */
+.rightdiv{
+    grid-column-start: 38;
+    grid-column-end: 51;
+    grid-row-start: 1;
+    grid-row-end: 51;
+
+}
+
+/* TITLES */
+.titles{
+    margin-left: 10px;
 }

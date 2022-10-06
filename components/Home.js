@@ -8,7 +8,22 @@ function Accueil() {
   return (
     <>
       <div className={styles.maindiv}>
-        <p className={styles.title}>SONS OF Tweet</p>
+        <div className={styles.leftdiv}>
+          <img src="logo.png" className={styles.logoleftdiv} />
+          <div>
+            <div>
+              <img src="User2.png" className={styles.userimage} />
+            </div>
+            <div></div>
+            <button></button>
+          </div>
+        </div>
+        <div className={styles.middlediv}>
+          <h1 className={styles.titles}>Home</h1>
+        </div>
+        <div className={styles.rightdiv}>
+          <h1 className={styles.titles}>Trends</h1>
+        </div>
       </div>
     </>
   );
