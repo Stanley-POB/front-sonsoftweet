@@ -19,6 +19,7 @@
     grid-row-end: 51;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     
 }
 
@@ -27,12 +28,40 @@
     border-radius: 10px;
     margin-top: 20px;
     margin-left: 20px;
+    cursor: pointer;
+}
+
+.userdiv{
+    margin: 10px;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    margin-left: 50px;
+    gap: 10px;
+}
+
+.topdiv{
+    display: flex;
+    gap: 15px;
+    line-height: 0.5;
 }
 
 .userimage{
-    width: 4vw;
-    border-radius: 40px;
+    width: 3vw;
+    border-radius: 50%;
+    margin: 2px;
 }
+
+.logoutbutton{
+    width: 6vw;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
 
 /* MIDDLE DIV */
 .middlediv{
@@ -57,4 +86,5 @@
 /* TITLES */
 .titles{
     margin-left: 10px;
+    color: white;
 }

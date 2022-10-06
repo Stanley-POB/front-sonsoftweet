@@ -3,19 +3,27 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
+import Link from "next/link";
 
 function Accueil() {
   return (
     <>
       <div className={styles.maindiv}>
         <div className={styles.leftdiv}>
-          <img src="logo.png" className={styles.logoleftdiv} />
-          <div>
-            <div>
-              <img src="User2.png" className={styles.userimage} />
+          <Link href="/">
+            <img src="logo.png" className={styles.logoleftdiv} />
+          </Link>
+          <div className={styles.userdiv}>
+            <div className={styles.topdiv}>
+              <div>
+                <img src="User2.png" className={styles.userimage} />
+              </div>
+              <div>
+                <p>Medhi</p>
+                <p>Bogoss du 78</p>
+              </div>
             </div>
-            <div></div>
-            <button></button>
+            <button className={styles.logoutbutton}>Log Out</button>
           </div>
         </div>
         <div className={styles.middlediv}>
