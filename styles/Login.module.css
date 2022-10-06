@@ -4,15 +4,15 @@
     margin:0;
     color: white;
     display: grid;
-    grid-template-columns: repeat(50, 20px);
-    grid-template-rows: repeat(50, 20px);
+    grid-template-columns: repeat(50, 1fr);
+    grid-template-rows: repeat(50, 1fr);
     overflow: hidden;
 }
 
 /* LEFT DIV */
 .leftdiv{
     grid-column-start: 1;
-    grid-column-end: 40;
+    grid-column-end: 23;
     grid-row-start: 1;
     grid-row-end: 51;
     background-image: url("../public/twitter.png");
@@ -29,7 +29,7 @@
 
 /* RIGHT DIV */
 .rightdiv{
-    grid-column-start: 40;
+    grid-column-start: 23;
     grid-column-end: 51;
     grid-row-start: 1;
     grid-row-end: 51;
