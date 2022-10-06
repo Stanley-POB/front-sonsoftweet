@@ -1,0 +1,14 @@
+.testdiv{
+    border: 2px solid grey;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    max-height: 10vh;
+    border-radius: 10px;
+    margin-top: 20px;
+}
