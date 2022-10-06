@@ -12,7 +12,7 @@
 /* LEFT DIV */
 .leftdiv{
     grid-column-start: 1;
-    grid-column-end: 45;
+    grid-column-end: 40;
     grid-row-start: 1;
     grid-row-end: 51;
     background-image: url("../public/twitter.png");
@@ -29,8 +29,8 @@
 
 /* RIGHT DIV */
 .rightdiv{
-    grid-column-start: 55;
-    grid-column-end: 100;
+    grid-column-start: 40;
+    grid-column-end: 51;
     grid-row-start: 1;
     grid-row-end: 51;
     background-color: black;
@@ -44,6 +44,7 @@
     width: 6vw;
     border-radius: 10px;
     margin-top: 20px;
+    margin-right: 50px;
 }
 
 
