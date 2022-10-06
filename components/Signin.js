@@ -7,9 +7,13 @@ import { useState } from "react";
 function Signin() {
   return (
     <>
-      <div className={styles.maindiv}>
+      <div className={styles.testdiv}>
         <img src="logo.png" className={styles.logo} />
         <p>Create your Sons of Tweet account</p>
+        <input placeholder="First name" className={styles.input}></input>
+        <input placeholder="Username" className={styles.input}></input>
+        <input placeholder="Password" className={styles.input}></input>
+        <button className={styles.signupbuttonmodal}>Sign In</button>
       </div>
     </>
   );

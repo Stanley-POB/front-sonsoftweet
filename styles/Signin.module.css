@@ -1,9 +1,10 @@
-.maindiv{
+.testdiv{
     border: 2px solid grey;
-    width: 200px;
-    height: 200px;
-    background-color: #657786;
-    color: white;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .logo{

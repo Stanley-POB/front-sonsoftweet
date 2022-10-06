@@ -70,14 +70,6 @@ function Login() {
               <Signin />
             </Modal>
           </div>
-          <div className={styles.testdiv}>
-            <img src="logo.png" className={styles.logorightdiv} />
-            <p>Create your Sons of Tweet account</p>
-            <input placeholder="First name" className={styles.input}></input>
-            <input placeholder="Username" className={styles.input}></input>
-            <input placeholder="Password" className={styles.input}></input>
-            <button className={styles.signupbuttonmodal}>Sign UP</button>
-          </div>
         </div>
       </div>
     </>
