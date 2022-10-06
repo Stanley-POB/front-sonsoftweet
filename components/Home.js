@@ -4,8 +4,17 @@ import styles from "../styles/Home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import Link from "next/link";
+import {logout} from '../reducers/user';
+
 
 function Accueil() {
+
+  const dispatch = useDispatch();
+  const Logout = () => {
+		dispatch(logout());
+    window.location.href='/'
+	};
+
   return (
     <>
       <div className={styles.maindiv}>
@@ -23,7 +32,7 @@ function Accueil() {
                 <p>Bogoss du 78</p>
               </div>
             </div>
-            <button className={styles.logoutbutton}>Log Out</button>
+            <button className={styles.logoutbutton} onClick={() => Logout()} >Log Out</button>
           </div>
         </div>
         <div className={styles.middlediv}>
