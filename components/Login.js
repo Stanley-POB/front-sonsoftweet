@@ -4,14 +4,35 @@ import styles from "../styles/Login.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Signin from "./Signin";
 import Signup from "./Signup";
+import "antd/dist/antd.css";
 import { Button, Modal } from "antd";
 import { useState } from "react";
 
 function Login() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpenSignIn, setIsModalSignInOpen] = useState(false);
+  const [isModalOpenSignUp, setIsModalSignUpOpen] = useState(false);
 
-  const showModal = () => {
-    setIsModalOpen(true);
+  const showModalSignIn = () => {
+    setIsModalSignInOpen(true);
+  };
+  const showModalSignUp = () => {
+    setIsModalSignUpOpen(true);
+  };
+
+  const handleOkSignUp = () => {
+    setIsModalSignUpOpen(false);
+  };
+
+  const handleCancelSignUp = () => {
+    setIsModalSignUpOpen(false);
+  };
+
+  const handleOkSignIn = () => {
+    setIsModalSignInOpen(false);
+  };
+
+  const handleCancelSignIn = () => {
+    setIsModalSignInOpen(false);
   };
 
 
@@ -27,17 +48,25 @@ function Login() {
           <div>
             <h1 className={styles.maintitle}>See what's happening</h1>
             <h2>Join Sons of Tweet today!</h2>
-            <button className={styles.signupbutton} onClick={showModal}>
+            <button className={styles.signupbutton} onClick={showModalSignUp}>
               SIGN UP
             </button>
-            <Modal open={isModalOpen}>
+            <Modal
+              open={isModalOpenSignUp}
+              onOk={handleOkSignUp}
+              onCancel={handleCancelSignUp}
+            >
               <Signup />
             </Modal>
             <p>Already have an account?</p>
-            <button className={styles.signinbutton} onClick={showModal}>
+            <button className={styles.signinbutton} onClick={showModalSignIn}>
               SIGN IN
             </button>
-            <Modal open={isModalOpen}>
+            <Modal
+              open={isModalOpenSignIn}
+              onOk={handleOkSignIn}
+              onCancel={handleCancelSignIn}
+            >
               <Signin />
             </Modal>
           </div>
