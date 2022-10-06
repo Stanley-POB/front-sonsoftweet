@@ -1,7 +1,15 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
+import Head from "next/head";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function SonsOfTweet({ Component, pageProps }) {
+  return (
+    <>
+      <Head>
+        <title>Sons of Tweet</title>
+      </Head>
+      <Component {...pageProps} />
+    </>
+  );
 }
 
-export default MyApp
+export default SonsOfTweet;

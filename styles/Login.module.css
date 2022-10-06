@@ -1,0 +1,109 @@
+
+/* BODY */
+.maindiv{
+    margin:0;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(50, 20px);
+    grid-template-rows: repeat(50, 20px);
+    overflow: hidden;
+}
+
+/* LEFT DIV */
+.leftdiv{
+    grid-column-start: 1;
+    grid-column-end: 45;
+    grid-row-start: 1;
+    grid-row-end: 51;
+    background-image: url("../public/twitter.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoleftdiv{
+    height: 40vh;
+    border-radius: 10px;
+}
+
+
+/* RIGHT DIV */
+.rightdiv{
+    grid-column-start: 55;
+    grid-column-end: 100;
+    grid-row-start: 1;
+    grid-row-end: 51;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.logorightdiv{
+    width: 6vw;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+.maintitle{
+    font-size: 100px;
+}
+
+.testdiv{
+    border: 2px solid grey;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* BUTTONS */
+.signinbutton{
+cursor: pointer;
+width: 10vw;
+height: 6vh;
+background-color: #14171A;
+color: #1DA1F2;
+border-radius: 5px;
+}
+
+.signupbutton{
+    cursor: pointer;
+    height: 6vh;
+    width: 10vw;
+    background-color: #1DA1F2;
+    color: white;
+    border-radius: 5px;
+}
+
+.signupbuttonmodal{
+    cursor: pointer;
+    height: 6vh;
+    width: 10vw;
+    background-color: #1DA1F2;
+    color: white;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+/* INPUT */
+
+.input{
+    border: 2PX solid grey;
+    width: 30vw;
+    color: grey;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+

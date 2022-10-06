@@ -1,0 +1,13 @@
+.maindiv{
+    border: 2px solid grey;
+    width: 200px;
+    height: 200px;
+    background-color: #657786;
+    color: white;
+}
+
+.logo{
+    max-height: 10vh;
+    border-radius: 10px;
+    margin-top: 20px;
+}
