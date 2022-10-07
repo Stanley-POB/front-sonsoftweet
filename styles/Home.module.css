@@ -54,11 +54,20 @@
 }
 
 .logoutbutton{
-    width: 6vw;
+    height: 3vh;
+    width: 5vw;
     border-radius: 10px;
     margin-bottom: 5px;
     margin-left: 10px;
     cursor: pointer;
+    background-color:#14171A;
+    border: 1px solid white;
+
+}
+
+.logoutbutton:hover{
+    cursor: pointer;
+    background-color: #1DA1F2;
 }
 
 
@@ -77,28 +86,40 @@
 
 }
 
+.topmiddlediv{
+    width: 48vw;
+    padding: 1vw;
+}
+
 .createtweet{
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40vw;
+    width: 48vw;
     padding: 5px;
     height: 20vh;
     gap: 10px;
+    border-bottom: 1px solid #AAB8C2;
 
 }
 
 
 .tweetbutton{
     cursor: pointer;
-    height: 6vh;
-    width: 6vw;
+    height: 4vh;
+    width: 7vw;
     background-color: #1DA1F2;
     color: white;
     border-radius: 10px;
     margin-left: 400px;
     margin-top: 10px;
+    border: 1px solid white;
+}
+
+.tweetbutton:hover{
+    background-color: #AAB8C2;
+    font-weight: bolder;
 }
 
 .tweetinput{
@@ -109,6 +130,59 @@
     border-bottom: 2px solid #AAB8C2;
     padding: 5px;
 }
+
+.tweetinput:active{
+    border: none;
+
+}
+
+
+
+.tweets{
+    border-bottom: 1px solid #AAB8C2;
+    height: 20vh;
+    width: 48vw;
+    padding: 10px;
+}
+
+.topdivtweet{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.tweetimage{
+    width: 3vw;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.firstname{
+    font-weight: bolder;
+}
+
+.icon{
+    display: flex;
+    gap: 10px;
+}
+
+.trash{
+    cursor: pointer;
+}
+
+.trash:hover{
+    color:#1DA1F2;
+}
+
+.heart{
+    cursor: pointer;
+}
+
+.heart:hover{
+    color:#1DA1F2;
+}
+
 
 /* RIGHT DIV */
 .rightdiv{
@@ -121,6 +195,5 @@
 
 /* TITLES */
 .titles{
-    margin-left: 10px;
     color: white;
 }
