@@ -64,10 +64,10 @@ function Login() {
               >
                 <Signup />
               </Modal>
-              <p>Already have an account?</p>
               <button className={styles.signinbutton} onClick={showModalSignIn}>
                 SIGN IN
               </button>
+              <p>Already have an account?</p>
               <Modal
                 open={isModalOpenSignIn}
                 onOk={handleOkSignIn}
