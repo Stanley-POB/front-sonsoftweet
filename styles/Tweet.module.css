@@ -1,0 +1,44 @@
+.tweets{
+    border-bottom: 1px solid #AAB8C2;
+    height: 20vh;
+    width: 48vw;
+    padding: 10px;
+}
+
+.topdivtweet{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.tweetimage{
+    width: 3vw;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.firstname{
+    font-weight: bolder;
+}
+
+.icon{
+    display: flex;
+    gap: 10px;
+}
+
+.trash{
+    cursor: pointer;
+}
+
+.trash:hover{
+    color:#1DA1F2;
+}
+
+.heart{
+    cursor: pointer;
+}
+
+.heart:hover{
+    color:#1DA1F2;
+}
