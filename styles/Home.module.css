@@ -71,7 +71,43 @@
     grid-column-end: 38;
     grid-row-start: 1;
     grid-row-end: 51;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+}
+
+.createtweet{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+    padding: 5px;
+    height: 20vh;
+    gap: 10px;
+
+}
+
+
+.tweetbutton{
+    cursor: pointer;
+    height: 6vh;
+    width: 6vw;
+    background-color: #1DA1F2;
+    color: white;
+    border-radius: 10px;
+    margin-left: 400px;
+    margin-top: 10px;
+}
+
+.tweetinput{
+    width: 35vw;
+    border: none;
+    background-color: #14171A;
+    font-size: 20px;
+    border-bottom: 2px solid #AAB8C2;
+    padding: 5px;
 }
 
 /* RIGHT DIV */

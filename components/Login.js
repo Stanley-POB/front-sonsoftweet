@@ -49,7 +49,7 @@ function Login() {
           <img src="logo.png" className={styles.logorightdiv} />
           <div className={styles.rightdivcontent}>
             <h1 className={styles.maintitle}>See what's happening</h1>
-            <h2>Join Sons of Tweet today!</h2>
+            <h2 className={styles.secondtitle}>Join Sons of Tweet today!</h2>
             <Link href="/home">
               <span className={styles.homepage}>HOMEPAGE</span>
             </Link>

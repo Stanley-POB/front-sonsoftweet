@@ -49,9 +49,20 @@
     margin-left: 50px;
 }
 
+.rightdivcontent{
+    color: white;
+    margin-left: 50px;
+    border: 2px solid grey;
+}
+
 
 .maintitle{
     font-size: 100px;
+    color: white;
+}
+
+.secondtitle{
+    color: white;
 }
 
 .rightdivbutton{
