@@ -37,6 +37,18 @@ function Accueil() {
         </div>
         <div className={styles.middlediv}>
           <h1 className={styles.titles}>Home</h1>
+          <div className={styles.createtweet}>
+            <div>
+              <input
+                type="text"
+                placeholder="WHAT'S UP???"
+                className={styles.tweetinput}
+              />
+            </div>
+            <div>
+              <button className={styles.tweetbutton}>Tweet</button>
+            </div>
+          </div>
         </div>
         <div className={styles.rightdiv}>
           <h1 className={styles.titles}>Trends</h1>
