@@ -16,7 +16,7 @@
     grid-column-start: 1;
     grid-column-end: 23;
     grid-row-start: 1;
-    grid-row-end:77;
+    grid-row-end:51;
     background-image: url("../public/twitter.png");
     display: flex;
     justify-content: center;
@@ -34,7 +34,7 @@
     grid-column-start: 23;
     grid-column-end: 51;
     grid-row-start: 1;
-    grid-row-end: 77;
+    grid-row-end: 51;
     background-color: black;
     color: white;
     display: flex;

@@ -193,6 +193,11 @@
 
 }
 
+.topmiddlediv{
+    width: 48vw;
+    padding: 1vw;
+}
+
 /* TITLES */
 .titles{
     color: white;
