@@ -13,9 +13,10 @@ function Signin() {
   
   const [signUpUsername, setSignUpUsername] = useState('');
   const [signUpPassword, setSignUpPassword] = useState('');
-
+  const [signUpFirstname, setSignUpFirstname] = useState('');
 
 	const handleConnection = () => {
+    
 		fetch('http://localhost:3000/users/signin', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
@@ -24,9 +25,11 @@ function Signin() {
 			.then(data => {
        
 				if (data.result) {
-					dispatch(login({ username: signUpUsername, password: signUpPassword }));
+          
+					dispatch(login({ token: data.token, username: signUpUsername, firstname : data.firstname }));
           setSignUpUsername('');
 					setSignUpPassword('');
+          setSignUpFirstname('');
           window.location.href='/home'
 				}
 			});

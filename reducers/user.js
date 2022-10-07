@@ -14,13 +14,16 @@ export const usersSlice = createSlice({
         state.value.firstname = action.payload.firstname;
         state.value.token = action.payload.token;
         state.value.username = action.payload.username;
+    
       },
       logout: (state) => {
         state.value.token = null;
         state.value.username = null;
+        state.value.firstname = null;
       },
+    
     },
    });
    
-   export const { login, logout } = usersSlice.actions;
+   export const { login, logout, } = usersSlice.actions;
    export default usersSlice.reducer;

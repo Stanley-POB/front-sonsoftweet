@@ -7,6 +7,7 @@ import Link from "next/link";
 import {logout} from '../reducers/user';
 
 
+
 function Accueil() {
 
   const dispatch = useDispatch();
@@ -14,6 +15,12 @@ function Accueil() {
 		dispatch(logout());
     window.location.href='/'
 	};
+
+
+  const userFirstname = useSelector((state) => state.user.value);
+  const userUsername = useSelector ((state) => state.user.value);
+
+  //console.log('fsfzef',userFirstname)
 
   return (
     <>
@@ -28,8 +35,8 @@ function Accueil() {
                 <img src="User2.png" className={styles.userimage} />
               </div>
               <div>
-                <p>Medhi</p>
-                <p>Bogoss du 78</p>
+                <p>{userFirstname.firstname}</p>
+                <p>{userUsername.username}</p>
               </div>
             </div>
             <button className={styles.logoutbutton} onClick={() => Logout()} >Log Out</button>
